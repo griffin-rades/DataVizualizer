@@ -56,7 +56,7 @@ public class DataVisualizer {
             if (indexTwo != -1) {
                 System.out.println("Error: Too many commas in input.");
                 continue;
-            } else if (userInString.matches(".*[a-z].*")) { //see what is after the comma. Want a number (digits) error if contains letters
+            } else if (userInString.toLowerCase().matches(".*[a-z].*")) { //see what is after the comma. Want a number (digits) error if contains letters
                 System.out.println("Error: Comma not followed by an integer.");
                 continue;
             } else {
